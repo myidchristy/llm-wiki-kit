@@ -85,17 +85,18 @@ Add to your MCP config (`claude_desktop_config.json`):
 
 #### OpenAI Codex
 
-Create or add to your `mcp.json` and run with `codex --mcp-config mcp.json`:
+Add the server with:
 
-```json
-{
-  "mcpServers": {
-    "llm-wiki-kit": {
-      "command": "llm-wiki-kit",
-      "args": ["serve", "--root", "/path/to/my-research"]
-    }
-  }
-}
+```bash
+codex mcp add llm-wiki-kit -- llm-wiki-kit serve --root /path/to/my-research
+```
+
+Or add it manually to `~/.codex/config.toml`:
+
+```toml
+[mcp_servers.llm-wiki-kit]
+command = "llm-wiki-kit"
+args = ["serve", "--root", "/path/to/my-research"]
 ```
 
 #### Cursor

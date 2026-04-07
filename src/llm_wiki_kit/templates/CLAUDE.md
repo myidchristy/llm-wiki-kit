@@ -20,6 +20,7 @@ You have these tools via the `llm-wiki-kit` MCP server:
 - `wiki_lint` — Health-check for broken links, orphans, etc.
 - `wiki_status` — Overview of the wiki
 - `wiki_log` — Append to the chronological log
+- `wiki_graph` — Generate an interactive HTML visualization of the knowledge graph
 
 ## Conventions
 

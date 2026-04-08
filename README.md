@@ -11,6 +11,8 @@
 
 Based on [Karpathy's LLM Wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f). Works with Claude, Codex, Cursor, Windsurf, and any MCP-compatible agent.
 
+<!-- DEMO VIDEO: drag and drop here -->
+
 ---
 
 ## The Problem
@@ -131,7 +133,7 @@ Your agent now has **persistent memory** that survives across sessions.
 | **Persistent across sessions** | Start fresh chats without losing context |
 | **Full-text search** | Agent finds relevant pages instantly (SQLite FTS5) |
 | **Health checks** | `wiki_lint` catches broken links, orphan pages, contradictions |
-| **Graph visualization** | `wiki_graph` generates an interactive HTML map of your knowledge |
+| **Graph visualization** | `wiki_graph` generates an interactive HTML map of your knowledge (see below) |
 | **Zero lock-in** | It's just markdown files in a folder — view in Obsidian, VS Code, anywhere |
 | **Works with any MCP agent** | Claude, Codex, Cursor, Windsurf, and more |
 
@@ -186,6 +188,16 @@ pip install "llm-wiki-kit[all]"      # Everything
 ```
 
 The agent reads raw sources, writes wiki pages, and maintains the connections. You never touch the wiki directly — the agent does all the work.
+
+---
+
+## 📊 Knowledge Graph
+
+`wiki_graph` generates an interactive HTML visualization of your wiki's structure:
+
+<!-- GRAPH SCREENSHOT: drag and drop here -->
+
+Nodes are color-coded by type (sources, concepts, synthesis). Click and drag to explore connections.
 
 ---
 

@@ -259,15 +259,18 @@ def _extract_youtube(url: str) -> ExtractedContent:
         )
 
     try:
-        transcript_entries = YouTubeTranscriptApi.get_transcript(video_id)
-        lines = [entry["text"] for entry in transcript_entries]
+        # youtube-transcript-api v1.0+ uses instance method .fetch() instead of class method
+        ytt_api = YouTubeTranscriptApi()
+        transcript_entries = ytt_api.fetch(video_id)
+        # v1.0+ returns FetchedTranscriptSnippet objects with .text/.start attributes
+        lines = [entry.text for entry in transcript_entries]
         text = " ".join(lines)
 
         # Build timestamped version for metadata
         timestamped = []
         for entry in transcript_entries:
-            mins, secs = divmod(int(entry["start"]), 60)
-            timestamped.append(f"[{mins:02d}:{secs:02d}] {entry['text']}")
+            mins, secs = divmod(int(entry.start), 60)
+            timestamped.append(f"[{mins:02d}:{secs:02d}] {entry.text}")
 
         return ExtractedContent(
             text=text,

